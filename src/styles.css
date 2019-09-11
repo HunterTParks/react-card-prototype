@@ -1,0 +1,38 @@
+.App {
+}
+
+.App .card-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 10%);
+  grid-template-rows: 300px;
+
+  border: 1px solid black;
+}
+
+.App .card-container .card {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: -8px 5px 20px;
+  transition: 0.4s;
+
+  border: 1px dashed black;
+}
+
+.App .card-container .card {
+  transform: translateX(-100px);
+}
+.App .card-container .card.right-card-style {
+  transform: translateX(120px);
+}
+
+.App .card-container .card:hover {
+  transform: scale(1.1);
+}
+
+.App .card-container .not-hover {
+  transform: translateX(0px);
+}
